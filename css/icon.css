@@ -1,0 +1,7 @@
+#toplevel_page_cntctfrmtdb_manager .wp-menu-image {
+	font-family: 'bwsicons' !important;
+}
+#toplevel_page_cntctfrmtdb_manager .wp-menu-image:before {
+	content: "\e904";
+	font-family: 'bwsicons' !important;
+}

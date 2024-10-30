@@ -1,0 +1,182 @@
+/*
+* styles for manager page
+*/
+.cntctfrmtdb th#message {
+	display: table-cell !important;
+}
+.cntctfrmtdb-preloader {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	z-index: 1000;
+	margin-top: 30px;
+}
+.cntctfrmtdb_hidden {
+	display: none;
+}
+.cntctfrmtdb .wp-list-table i {
+	color: #999;
+}
+.cntctfrmtdb .wp-list-table .manage-column {
+	vertical-align: middle!important;
+}
+.cntctfrmtdb .wp-list-table .not-sent-message {
+	background: #ffebe8;
+}
+.cntctfrmtdb .wp-list-table .not-sent-message th,
+.cntctfrmtdb .wp-list-table .not-sent-message td {
+	border-top-color: #ffebe8;
+}
+.cntctfrmtdb .wp-list-table .column-from {
+	width: 200px;
+}
+.cntctfrmtdb .wp-list-table .column-from .from-name {
+	display: block;
+	color: #333;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.cntctfrmtdb .wp-list-table .column-from .from-name:hover {
+	text-decoration: underline;
+}
+.cntctfrmtdb .wp-list-table .column-from .not-read-message {
+	font-weight: bold;
+}
+.cntctfrmtdb .wp-list-table .column-message {
+	width: 600px;
+}
+.cntctfrmtdb .wp-list-table .column-message .message-container {
+	position: relative;
+	padding-bottom: 2px;
+	overflow: hidden;
+	color: #333;
+}
+.cntctfrmtdb-attachments-preview tr {
+	float: left;
+	margin-right: 3px;
+	margin-top: 3px
+}
+.cntctfrmtdb-attachments-preview .cntctfrmtdb-attachment-img {
+	margin-top: 5px;
+	display: block;
+	border: 1px solid #999;
+	-webkit-border-radius: 5px ;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.cntctfrmtdb-attachments-preview .cntctfrmtdb-attachment-img img {
+	max-width: 150px;
+	max-height: 150px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 3px ;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 1px 1px 5px rgba( 0, 0, 0, 0.8 );
+	-moz-box-shadow: 1px 1px 5px rgba( 0, 0, 0, 0.8 );
+	box-shadow: 1px 1px 5px rgba( 0, 0, 0, 0.8 );
+}
+.cntctfrmtdb-attachments-preview td {
+	vertical-align: middle!important;
+	border: none;
+}
+.cntctfrmtdb-attachments-preview .cntctfrmtdb-attachment-info a {
+	 visibility: hidden;
+}
+.cntctfrmtdb-attachments-preview .cntctfrmtdb-attachment-info:hover a {
+	 visibility: visible;
+}
+.cntctfrmtdb .wp-list-table .column-message strong {
+	color: #333;
+}
+.cntctfrmtdb-attachment-column-title {
+	display: inline-block;
+	width: 11px;
+	height: 16px;
+	margin-top: 3px;
+	background: url('../images/status-icons.png') 0 0;
+}
+.cntctfrmtdb .wp-list-table .column-sent .counter {
+	display: block;
+	float: left;
+	width: 34px;
+	height: 19px;
+	padding-top: 1px;
+	-webkit-border-radius: 2px ;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background: #dbdbdb;
+	color: #fff;
+	text-align: center;
+}
+.cntctfrmtdb .wp-list-table .column-sent .warning {
+	display: block;
+	float: left;
+	width: 6px;
+	height: 14px;
+	margin: 4px 6px 0 6px;
+	background: url('../images/status-icons.png') -33px 0;
+}
+.cntctfrmtdb .tablenav option[value="re_send_messages"],
+.cntctfrmtdb .tablenav option[value="download_attachments"] {
+	display: none;
+}
+.cntctfrmtdb-has-attachment {
+	display: inline-block;
+	width: 11px;
+	height: 16px;
+	background: url('../images/status-icons.png') -11px 0;
+}
+.cntctfrmtdb_how_to_use {
+	float: right;
+}
+.rtl .cntctfrmtdb_how_to_use {
+	float: left;
+}
+/*
+* styles for pro_version settings and tooltip
+*/
+a.bws_plugin_menu_pro_version,
+.bws_plugin_menu_pro_version:hover {
+	background: #B1B1B1;
+}
+table a.bws_plugin_menu_pro_version,
+table a.bws_plugin_menu_pro_version:hover {
+	background: transparent;
+	color: #666666;
+}
+.cntctfrmtdb-message-text,
+.cntctfrmtdb-custom-field-text {
+	word-break: break-word;
+}
+
+@media screen and (max-width: 782px) {
+	.cntctfrmtdb_how_to_use {
+		float: none;
+	}
+	.cntctfrmtdb_how_to_use li {
+		white-space: normal;
+	}
+	.cntctfrmtdb .wp-list-table .column-status,
+	.cntctfrmtdb .wp-list-table .column-from,
+	.cntctfrmtdb .wp-list-table .column-department,
+	.cntctfrmtdb .wp-list-table .column-attachment,
+	.cntctfrmtdb .wp-list-table .column-sent {
+		display: none;
+	}
+	.cntctfrmtdb .wp-list-table .column-from::before {
+		content: '' !important;
+	}
+	.cntctfrmtdb-help-pages {
+		display: none;
+	}
+}
+@media screen and (max-width: 486px) {
+	.cntctfrmtdb_save_to_block label{
+		width: 86%;
+	}
+}
+@media screen and (max-width: 782px){
+	.wp-list-table tr:not(.inline-edit-row):not(.no-items) td:not(.check-column) {
+		min-width: 150px;
+	}
+}
